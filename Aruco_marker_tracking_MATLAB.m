@@ -30,6 +30,7 @@ load camera_parameters_2.mat -mat camMatrix_cam_2 distCoeffs_cam_2 % Load Intrin
 % Marker detector parameters
 detectorParams = struct();
     detectorParams.adaptiveThreshWinSizeMin = 3;
+    detectorParams.adaptiveThreshWinSizeMax = 23;
     detectorParams.adaptiveThreshWinSizeStep = 10;
     detectorParams.adaptiveThreshConstant = 7;
     detectorParams.minMarkerPerimeterRate = 0.03;
